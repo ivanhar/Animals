@@ -1,0 +1,8 @@
+*.class
+*.log
+*.ctxt
+*.jar
+*.war
+*.zip
+.idea
+*.iml
