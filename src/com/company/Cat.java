@@ -1,6 +1,6 @@
 package com.company;
 
-public class Cat extends Animal {
+public abstract class Cat extends Animal {
 
     private boolean male;
 
@@ -18,5 +18,12 @@ public class Cat extends Animal {
 
     public void setMale(boolean male) {
         this.male = male;
+    }
+
+    protected abstract void catchPray(Animal pray);
+
+    @Override
+    protected void EatFood() {
+        // catchPray(pray);
     }
 }

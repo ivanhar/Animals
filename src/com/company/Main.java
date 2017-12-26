@@ -3,6 +3,16 @@ package com.company;
 public class Main {
 
     public static void main(String[] args) {
-System.out.println("Hello world!");
+
+
+        Animal pray = new Gnu();
+
+
+        Lion lion = new Lion(true, 150);
+        lion.catchPray(pray);
+
+        Cheetah cheetah = new Cheetah();
+        cheetah.catchPray(pray);
     }
 }
+

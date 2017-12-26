@@ -1,6 +1,6 @@
 package com.company;
 
-public class Lion {
+public class Lion extends Cat {
     private int weight;
 
     public Lion(boolean male, int weight) {
@@ -15,4 +15,11 @@ public class Lion {
     public void setWeight(int weight) {
         this.weight = weight;
     }
+
+    @Override
+    public void catchPray(Animal pray) {
+        System.out.println("I am lion, I ambush " + pray.toString());
+
+    }
 }
+
